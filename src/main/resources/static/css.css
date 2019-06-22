@@ -1,0 +1,44 @@
+
+html {
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    width: 1004px;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 20px;
+
+}
+
+#header {
+    width: 100%;
+    float: left;
+    background-color: #888;
+}
+#nav {
+    text-align: center;
+    width: 250px;
+    float: left;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+#content {
+    width: 554px;
+    float: left;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+#footer {
+    clear: both;
+    width: 20%;
+    background-color: #888;
+}

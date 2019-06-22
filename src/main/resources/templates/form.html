@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css.css" type="text/css" />
+
+</head>
+<body>
+<h1><center><p th:text="#{welcome}"></p></center></h1>
+
+    <div id="header">
+        <center>
+        .....
+        </center>
+    </div>
+
+    <div id="nav">
+        <form action="#" th:action="@{/newform}" th:object="${personObject}" method="post">
+
+            <p><input type="text" th:field="*{name}" placeholder="name">
+                <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error ex.</span>
+            </p>
+            <p><input type="text" th:field="*{lastname}" placeholder="lastname">
+                <span th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}">LastName error ex.</span>
+            </p>
+            <p><input type="text" th:field="*{age}" placeholder="age">
+                <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age error ex.</span>
+            </p>
+            <p><input type="text" th:field="*{phone}" placeholder="phone number">
+                <span th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}">Phone error ex.</span>
+            </p>
+            <p><input type="email" th:field="*{email}" placeholder="email">
+                <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email error ex.</span>
+            </p>
+            <p><button type="submit">Send</button> </p>
+        </form>
+
+    </div>
+<div id="content"><align right><img src="1.jpg" width="50" height="45"></align></div>
+    <div id="footer">
+        <center>.....
+        </center>
+    </div>
+
+
+</body>
+</html>
