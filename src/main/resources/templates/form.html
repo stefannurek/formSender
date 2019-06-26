@@ -7,13 +7,7 @@
 
 </head>
 <body>
-<h1><center><p th:text="#{welcome}"></p></center></h1>
-
-    <div id="header">
-        <center>
-        .....
-        </center>
-    </div>
+<h1><p th:text="#{welcome}"></p></h1>
 
     <div id="nav">
         <form action="#" th:action="@{/newform}" th:object="${personObject}" method="post">
@@ -37,12 +31,6 @@
         </form>
 
     </div>
-<div id="content"><align right><img src="1.jpg" width="50" height="45"></align></div>
-    <div id="footer">
-        <center>.....
-        </center>
-    </div>
-
 
 </body>
 </html>
